@@ -72,15 +72,6 @@ void drawAxis()
 void reshape(int width, int height)
 {
 }
-
-static void keys(unsigned char key, int x, int y)
-{
-    switch(key){
-
-    }
-
-    glutPostRedisplay();
-}
 //--------------------------------------------------------------------------
 
 void display()
@@ -110,9 +101,9 @@ int main(int argc, char **argv)
     glutCreateWindow("Ejemplo idea");
     init();
     glutDisplayFunc(display);
-    glutIdleFunc(idle);
-    glutKeyboardFunc(keys);
-    glutReshapeFunc(reshape);
+    //glutIdleFunc(idle);
+    //glutKeyboardFunc(keys);
+    //glutReshapeFunc(reshape);
     glutMainLoop();
     return 0;
 }

@@ -2,6 +2,7 @@
 
 Op3D::Op3D(){
     currentMatrix = new Modelado();
+    pi = 3.14159265359;
 
     // Assign Values
     for(int i=0;i<4;i++) {
@@ -40,6 +41,29 @@ void Op3D::assignValues(GLdouble (&matrixA)[4][4], GLdouble (&matrixB)[4][4]){
     }
 }
 
+void Op3D::rotateX(float b, float c, float d){
+    GLdouble rotateMatrix[4][4] = {{1,0,0,0}, {0, c/d, -b/d, 0}, {0, b/d, c/d, 0}, {0,0,0,1}};
+
+    mult(rotateMatrix, currentMatrix->matrix);
+}
+
+void Op3D::rotateY(float a, float d){
+    GLdouble rotateMatrix[4][4] = {{d, 0, a, 0}, {0, 1, 0, 0}, {-a, 0, d, 0}, {0,0,0,1}};
+
+    mult(rotateMatrix, currentMatrix->matrix);
+}
+
+void Op3D::rotateZ(float deg){
+    GLdouble rotateMatrix[4][4] = {{cos(deg), -1*sin(deg), 0, 0}, {sin(deg), cos(deg), 0, 0}, {0,0,1,0}, {0,0,0,1}};
+
+    mult(rotateMatrix, currentMatrix->matrix);
+}
+
+float Op3D::DegToRad(float g)
+{
+      return ((g*pi)/180);
+}
+
 void Op3D::translation(GLdouble x, GLdouble y, GLdouble z) {
 
     GLdouble transalteMatrix [4][4] = {{1,0,0,x}, {0,1,0,y}, {0,0,1,z}, {0,0,0,1}};
@@ -67,6 +91,31 @@ void Op3D::scaling(GLdouble x, GLdouble y, GLdouble z) {
     mult(escaleMatrix, currentMatrix->matrix);
 }
 
+void Op3D::rotacionLibre(float theta, float p1[3], float p2[3]){
+    //Sacar vector unitario
+    float V = sqrt( pow(p1[0] - p2[0], 2) + pow(p1[1] - p2[1], 2) + pow(p1[2] - p2[2], 2));
+
+    float a = (p2[0] - p1[0]) / V;
+    float b = (p2[1] - p1[1]) / V;
+    float c = (p2[2] - p1[2]) / V;
+
+    float d = sqrt(pow(b,2) + pow(c,2));
+
+    translation(-p1[0], -p1[1], -p2[2]);
+
+    rotateX(b,c,d);
+
+    rotateY(a,d);
+
+    rotateZ(DegToRad(theta));
+
+    rotateY(-a, -d);
+
+    rotateX(-b, -c, -d);
+
+    translation(p1[0], p1[1], p2[2]);
+}
+
 void Op3D::push() {
     Modelado *temp;
     temp = new Modelado();
@@ -77,8 +126,8 @@ void Op3D::push() {
 }
 
 void Op3D::pop() {
-    modelStack.pop();
-
     delete(currentMatrix);
+
     currentMatrix = modelStack.top();
+    modelStack.pop();
 }

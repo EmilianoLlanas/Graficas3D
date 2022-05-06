@@ -7,7 +7,8 @@
 class EscenaUno{
 private:
     Op3D *op;
-    Piramide piramideUno, piramideDos;
+    Piramide piramideUno, piramideDos, piramideTres;
+    float pointsA[3], pointsB[3];
 
 public:
     void dibujarEscena();
