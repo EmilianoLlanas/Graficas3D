@@ -6,14 +6,13 @@
 
 class EscenaUno{
 private:
-    Piramide piramideUno;
-    Op3D op;
+    Op3D *op;
+    Piramide piramideUno, piramideDos;
 
 public:
     void dibujarEscena();
 
     EscenaUno();
-
 };
 
 #endif // ESCENAUNO_H_INCLUDED

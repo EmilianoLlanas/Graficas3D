@@ -7,13 +7,16 @@
 
 class Piramide {
 private:
-    GLfloat points[MAXPOINTS][3] = {{0,0,2},{2,0,2},{2,0,0},{0,0,0},{1,1.5,1}};
-    Op3D op;
+    GLdouble points[4][MAXPOINTS];
+    GLdouble modelMatrix[4][MAXPOINTS];
+    Op3D *op;
+
+    void loadPoints();
 
 public:
-
     void draw();
     Piramide();
+    Piramide(Op3D* mainOp);
 };
 
 #endif // PIRAMIDE_H_INCLUDED

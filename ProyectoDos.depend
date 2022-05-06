@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1651697078 source:c:\users\luis angel\documents\graficas\proyectodos\main.cpp
+1651804910 source:c:\users\luis angel\documents\graficas\proyectodos\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
@@ -19,22 +19,32 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1651698371 c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.h
+1651810258 c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.h
 	"../utilidades/Op3D.h"
 	"../objetos/piramide.h"
 
-1651699217 c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.h
+1651803446 c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1651698772 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.cpp
+1651806838 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.cpp
 	"piramide.h"
 
-1651699240 source:c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.cpp
+1651810907 source:c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.cpp
 	"escenaUno.h"
 
-1651698208 c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.h
+1651810641 c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.h
+	<stack>
+	<GL/freeglut.h>
+	<iostream>
 
-1651698254 source:c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.cpp
+1651810765 source:c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.cpp
 	"Op3D.h"
+
+1651160428 c:\program files\codeblocks\mingw\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1651160429 c:\program files\codeblocks\mingw\include\gl\freeglut_ext.h
+	<stdarg.h>
 
