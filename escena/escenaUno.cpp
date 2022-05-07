@@ -21,12 +21,17 @@ void EscenaUno::dibujarEscena(){
     piramideDos.draw();
 
     op->pop(); //Matriz global de 5 de traslamiento en x
-    op->pop(); //Matriz identidad
+
+    op->translation(0,0,3);
 
     pointsA[0] = 0; pointsA[1] = 0; pointsA[2] = 0;
-    pointsB[0] = 0; pointsB[1] = 0; pointsB[2] = 1;
+    pointsB[0] = 1; // Rotar X
+    pointsB[1] = 0; // Rotar Y
+    pointsB[2] = 0; // Rotar Z
 
-    op->rotacionLibre(90.0f,  pointsA, pointsB);
+    op->rotacionLibre(45.0f, pointsA, pointsB); //Rotacion de 50° en eje Z
 
     piramideTres.draw();
+
+    op->pop();//Matriz Identidad
 }

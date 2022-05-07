@@ -27,19 +27,19 @@
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1651847060 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.cpp
+1651888075 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.cpp
 	"piramide.h"
 
-1651860421 source:c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.cpp
+1651959577 source:c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.cpp
 	"escenaUno.h"
 
-1651855136 c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.h
+1651890526 c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.h
 	<stack>
 	<GL/freeglut.h>
 	<iostream>
 	<cmath>
 
-1651855138 source:c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.cpp
+1651959779 source:c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.cpp
 	"Op3D.h"
 
 1651160428 c:\program files\codeblocks\mingw\include\gl\freeglut.h

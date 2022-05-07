@@ -11,24 +11,25 @@ Piramide::Piramide(Op3D* mainOp){
 }
 
 void Piramide::loadPoints(){
+
     points[0][0] = 0;
     points[1][0] = 0;
-    points[2][0] = 2;
+    points[2][0] = 0;
     points[3][0] = 1;
 
     points[0][1] = 2;
     points[1][1] = 0;
-    points[2][1] = 2;
+    points[2][1] = 0;
     points[3][1] = 1;
 
     points[0][2] = 2;
     points[1][2] = 0;
-    points[2][2] = 0;
+    points[2][2] = 2;
     points[3][2] = 1;
 
     points[0][3] = 0;
     points[1][3] = 0;
-    points[2][3] = 0;
+    points[2][3] = 2;
     points[3][3] = 1;
 
     points[0][4] = 1;

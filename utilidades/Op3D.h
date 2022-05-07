@@ -19,10 +19,14 @@ private:
     void mult(GLdouble (&matrixA)[4][4], GLdouble (&matrixB)[4][4]);
     void assignValues(GLdouble (&matrixA)[4][4], GLdouble (&matrixB)[4][4]);
     float DegToRad(float g);
+    void loadIdentity();
 
     void rotateX(float b, float c, float d);
     void rotateY(float a, float d);
     void rotateZ(float deg);
+
+    void rotateXD(float deg);
+    void rotateYD(float deg);
 public:
     Op3D();
 
