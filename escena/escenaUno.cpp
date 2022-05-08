@@ -2,36 +2,28 @@
 
 EscenaUno::EscenaUno(){
     op = new Op3D();
-    piramideUno = Piramide(op);
-    piramideDos = Piramide(op);
-    piramideTres = Piramide(op);
+    arbol1 = Arbol(op);
 }
 
 void EscenaUno::dibujarEscena(){
+    int i;
+
     op->push(); // Cargar una matriz identidad
+    op->translation(-24,0,0);
 
-    op->translation(5,0,0); //Matriz global se mueva 5 en x
+    for (i = 0; i < 6; i++) {
+        arbol1.draw();
+        op->translation(8,0,0);
+    }
 
-    op->push(); // Guardamos la matriz global de 5 de traslamiento
+    op->pop();
+    op->push();
 
-    piramideUno.draw();
-
-    op->translation(0,2,0);
-
-    piramideDos.draw();
-
-    op->pop(); //Matriz global de 5 de traslamiento en x
-
-    op->translation(0,0,3);
-
-    pointsA[0] = 0; pointsA[1] = 0; pointsA[2] = 0;
-    pointsB[0] = 1; // Rotar X
-    pointsB[1] = 0; // Rotar Y
-    pointsB[2] = 0; // Rotar Z
-
-    op->rotacionLibre(45.0f, pointsA, pointsB); //Rotacion de 50° en eje Z
-
-    piramideTres.draw();
+    op->translation(-24,0,50);
+    for (i = 0; i < 6; i++) {
+        arbol1.draw();
+        op->translation(8,0,0);
+    }
 
     op->pop();//Matriz Identidad
 }

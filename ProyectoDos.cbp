@@ -45,6 +45,8 @@
 		<Unit filename="escena/escenaUno.cpp" />
 		<Unit filename="escena/escenaUno.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="objetos/arbol.cpp" />
+		<Unit filename="objetos/arbol.h" />
 		<Unit filename="objetos/piramide.cpp" />
 		<Unit filename="objetos/piramide.h" />
 		<Unit filename="utilidades/Op3D.cpp" />
