@@ -5,32 +5,27 @@ EscenaUno::EscenaUno(){
     arbol1 = Arbol(op);
 }
 
+void EscenaUno::loadIdentity(){
+    op->loadIdentity();
+}
+
 void EscenaUno::dibujarEscena(){
     int i;
+    loadIdentity();
 
     op->push(); // Cargar una matriz identidad
-    op->translation(-24,0,0);
 
-    for (i = 0; i < 6; i++) {
-        arbol1.draw();
-        op->translation(8,0,0);
-    }
+    //op->translation(-8,0,0);
+    arbol1.draw();
+
+    /*op->push();
+    op->translation(16,0,0);
+    arbol1.draw();
+
 
     op->pop();
-    op->push();
-
-    op->translation(-24,0,50);
-
-
-    pointsA[0] = 0; pointsA[1] = 0; pointsA[2] = 0;
-    pointsB[0] = 1;
-
-    //op->rotacionLibre(45.0f, pointsA, pointsB);
-
-    for (i = 0; i < 6; i++) {
-        arbol1.draw();
-        op->translation(8,0,0);
-    }
+    op->translation(0,0,8);
+    arbol1.draw();*/
 
     op->pop();//Matriz Identidad
 }

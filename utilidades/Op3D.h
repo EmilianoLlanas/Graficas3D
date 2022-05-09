@@ -19,7 +19,6 @@ private:
     void mult(GLdouble (&matrixA)[4][4], GLdouble (&matrixB)[4][4]);
     void assignValues(GLdouble (&matrixA)[4][4], GLdouble (&matrixB)[4][4]);
     float DegToRad(float g);
-    void loadIdentity();
 
     void rotateX(float b, float c, float d);
     void rotateY(float a, float d);
@@ -29,6 +28,7 @@ private:
     void rotateYD(float deg);
 public:
     Op3D();
+    void loadIdentity();
 
     void translation(GLdouble x, GLdouble y, GLdouble z);
     void scaling(GLdouble x, GLdouble y, GLdouble z);

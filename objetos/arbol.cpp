@@ -112,7 +112,7 @@ void Arbol::draw(){
     GLfloat colors [3] = {0.5529f, 0.2863f, 0.1451f};
 
     GLint width = 3;
-    GLdouble fillDif = 0.6;
+    GLdouble fillDif = 0.02;
 
     glColor3fv(colors);
     glPointSize(width);
@@ -230,5 +230,5 @@ void Arbol::draw(){
 }
 
 void Arbol::update() {
-    movimiento += 0.03;
+    movimiento += 0.0003;
 }

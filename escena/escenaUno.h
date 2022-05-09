@@ -9,6 +9,7 @@ private:
     Op3D *op;
     Arbol arbol1;
     float pointsA[3], pointsB[3];
+    void loadIdentity();
 
 public:
     void dibujarEscena();
