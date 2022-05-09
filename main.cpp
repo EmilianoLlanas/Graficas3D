@@ -19,9 +19,9 @@ float FOVY=60.0;
 float ZNEAR=0.01;
 float ZFAR=300.0;
 //gluLookAt(EYE_X,EYE_Y,EYE_Z,CENTER_X,CENTER_Y,CENTER_Z,UP_X,UP_Y,UP_Z)
-float EYE_X=0.0;
-float EYE_Y=0.0;
-float EYE_Z=0.0;
+float EYE_X=10.0;
+float EYE_Y=15.0;
+float EYE_Z=10.0;
 float CENTER_X=0;
 float CENTER_Y=0;
 float CENTER_Z=0;
@@ -38,6 +38,9 @@ float Z_MAX=20;
 
 void idle(void)
 {
+    escena.actualizarEscena();
+    Sleep(30);
+    glFlush();
 }
 
 void drawAxis()
@@ -114,6 +117,7 @@ void display()
     drawAxis();
     escena.dibujarEscena();
     glutSwapBuffers();
+    glFlush();
 }
 
 void init()
@@ -135,8 +139,8 @@ int main(int argc, char **argv)
     glutCreateWindow("Ejemplo idea");
     init();
     glutDisplayFunc(display);
-    //glutIdleFunc(idle);
-    glutKeyboardFunc(keys);
+    glutIdleFunc(idle);
+    //glutKeyboardFunc(keys);
     //glutReshapeFunc(reshape);
     glutMainLoop();
     return 0;

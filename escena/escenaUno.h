@@ -12,6 +12,7 @@ private:
 
 public:
     void dibujarEscena();
+    void actualizarEscena();
 
     EscenaUno();
 };
