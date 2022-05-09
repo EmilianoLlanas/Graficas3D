@@ -3,6 +3,7 @@
 EscenaUno::EscenaUno(){
     op = new Op3D();
     arbol1 = Arbol(op);
+    alien = Alien(op);
 }
 
 void EscenaUno::dibujarEscena(){
@@ -17,6 +18,7 @@ void EscenaUno::dibujarEscena(){
     }
 
     op->pop();
+
     op->push();
 
     op->translation(-24,0,50);
@@ -26,4 +28,11 @@ void EscenaUno::dibujarEscena(){
     }
 
     op->pop();//Matriz Identidad
+
+    op->push();
+
+    op->translation(5,2,5);
+    alien.draw();
+
+    op->pop();
 }

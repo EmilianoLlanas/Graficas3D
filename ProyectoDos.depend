@@ -5,10 +5,10 @@
 	<stdlib.h>
 	"escena/escenaUno.h"
 
-1651160424 c:\program files\codeblocks\mingw\include\gl\glut.h
+1645718850 c:\program files\codeblocks\mingw\include\gl\glut.h
 	"freeglut_std.h"
 
-1651160423 c:\program files\codeblocks\mingw\include\gl\freeglut_std.h
+1645718850 c:\program files\codeblocks\mingw\include\gl\freeglut_std.h
 	<windows.h>
 	<EGL/egl.h>
 	<GLES/gl.h>
@@ -42,11 +42,11 @@
 1651959779 source:c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.cpp
 	"Op3D.h"
 
-1651160428 c:\program files\codeblocks\mingw\include\gl\freeglut.h
+1645718850 c:\program files\codeblocks\mingw\include\gl\freeglut.h
 	"freeglut_std.h"
 	"freeglut_ext.h"
 
-1651160429 c:\program files\codeblocks\mingw\include\gl\freeglut_ext.h
+1645718850 c:\program files\codeblocks\mingw\include\gl\freeglut_ext.h
 	<stdarg.h>
 
 1652034653 c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.h
@@ -55,4 +55,58 @@
 
 1652038363 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.cpp
 	"arbol.h"
+
+1652117978 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.cpp
+	"escenaUno.h"
+
+1652060396 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.h
+	"../utilidades/Op3D.h"
+	"../objetos/arbol.h"
+	"../objetos/alien.h"
+
+1652057229 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\utilidades\op3d.h
+	<stack>
+	<GL/freeglut.h>
+	<iostream>
+	<cmath>
+
+1652057229 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.h
+	<GL/glut.h>
+	"../utilidades/Op3D.h"
+
+1652057707 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\main.cpp
+	<GLUT/glut.h>
+	<GL/glut.h>
+	<stdlib.h>
+	"escena/escenaUno.h"
+
+1652118160 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.cpp
+	"arbol.h"
+
+1652057229 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\piramide.cpp
+	"piramide.h"
+
+1652060962 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\piramide.h
+	<GL/glut.h>
+	"../utilidades/Op3D.h"
+
+1652057229 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\utilidades\op3d.cpp
+	"Op3D.h"
+
+1652117097 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\alien.h
+	<GL/glut.h>
+	"../utilidades/Op3D.h"
+
+1652117894 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\alien.cpp
+	"alien.h"
+
+1652060962 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\/objetos\piramide.h
+	<GL/glut.h>
+	"../utilidades/Op3D.h"
+
+1652057229 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\\utilidades\op3d.h
+	<stack>
+	<GL/freeglut.h>
+	<iostream>
+	<cmath>
 
