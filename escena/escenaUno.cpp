@@ -2,7 +2,7 @@
 
 EscenaUno::EscenaUno(){
     op = new Op3D();
-  
+
     carro1= Carro(op);
 
 
@@ -36,8 +36,13 @@ void EscenaUno::dibujarEscena(){
     }
 
     op->pop();//Matriz Identidad
+    op->push();
+    carro1.draw();
+
+
 }
 
 void EscenaUno::actualizarEscena() {
     arbol1.update();
+    carro1.update();
 }

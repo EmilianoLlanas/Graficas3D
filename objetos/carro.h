@@ -11,10 +11,12 @@ private:
     GLdouble modelMatrix[4][MAXPOINTS];
     Op3D *op;
 
+    float movimiento, rotacion;
     void loadPoints();
 
 public:
     void draw();
+    void update();
     Carro();
     Carro(Op3D* mainOp);
 };
