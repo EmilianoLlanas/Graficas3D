@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1652134620 source:c:\users\luis angel\documents\graficas\proyectodos\main.cpp
+1652139472 source:c:\users\luis angel\documents\graficas\proyectodos\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
@@ -19,27 +19,28 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1652131160 c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.h
+1652143023 c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.h
 	"../utilidades/Op3D.h"
 	"../objetos/arbol.h"
+	"../objetos/piramide.h"
 
-1652034644 c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.h
+1652143074 c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1651888075 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.cpp
+1652144272 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.cpp
 	"piramide.h"
 
-1652133721 source:c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.cpp
+1652143179 source:c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.cpp
 	"escenaUno.h"
 
-1652131202 c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.h
+1652139472 c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.h
 	<stack>
 	<GL/freeglut.h>
 	<iostream>
 	<cmath>
 
-1651959779 source:c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.cpp
+1652139472 source:c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.cpp
 	"Op3D.h"
 
 1651160428 c:\program files\codeblocks\mingw\include\gl\freeglut.h
@@ -49,10 +50,10 @@
 1651160429 c:\program files\codeblocks\mingw\include\gl\freeglut_ext.h
 	<stdarg.h>
 
-1652056144 c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.h
+1652139472 c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652134715 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.cpp
+1652139472 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.cpp
 	"arbol.h"
 
