@@ -77,7 +77,7 @@ void reshape(int width, int height)
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    drawAxis();
+    //drawAxis();
     escena.dibujarEscena();
     glutSwapBuffers();
 }
