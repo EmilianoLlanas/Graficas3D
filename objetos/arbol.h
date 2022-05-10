@@ -11,7 +11,7 @@ private:
     GLdouble modelMatrix[4][MAXPOINTS];
     Op3D *op;
 
-    float movimiento;
+    float movimiento, rotacion;
     void loadPoints();
 
 public:

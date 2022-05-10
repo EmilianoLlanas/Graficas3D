@@ -3,12 +3,14 @@
 Arbol::Arbol(){
     op = NULL;
     movimiento = 0;
+    rotacion = 0;
     loadPoints();
 }
 
 Arbol::Arbol(Op3D* mainOp){
     op = mainOp;
     movimiento = 0;
+    rotacion = 0;
     loadPoints();
 }
 
@@ -100,9 +102,13 @@ void Arbol::loadPoints(){
 }
 
 void Arbol::draw(){
+    float p1[3] = {0,0,0};
+    float p3[3] = {0,1,0};
+
     op->push();
 
     op->translation(movimiento,0,0);
+    op->rotacionLibre(rotacion,p1, p3);
 
     op->applyModelMatrix(*points, *modelMatrix, MAXPOINTS);
 
@@ -112,7 +118,7 @@ void Arbol::draw(){
     GLfloat colors [3] = {0.5529f, 0.2863f, 0.1451f};
 
     GLint width = 3;
-    GLdouble fillDif = 0.02;
+    GLdouble fillDif = 0.1;
 
     glColor3fv(colors);
     glPointSize(width);
@@ -230,5 +236,6 @@ void Arbol::draw(){
 }
 
 void Arbol::update() {
-    movimiento += 0.0003;
+    movimiento += 0.006;
+    rotacion += 0.5;
 }

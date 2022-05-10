@@ -3,7 +3,7 @@
 
 #include <GL/glut.h>
 #include "../utilidades/Op3D.h"
-#define MAXPOINTS 6
+#define MAXPOINTS 5
 
 class Piramide {
 private:
