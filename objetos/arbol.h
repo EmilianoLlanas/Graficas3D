@@ -11,10 +11,12 @@ private:
     GLdouble modelMatrix[4][MAXPOINTS];
     Op3D *op;
 
+    float movimiento;
     void loadPoints();
 
 public:
     void draw();
+    void update();
     Arbol();
     Arbol(Op3D* mainOp);
 };

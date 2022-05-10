@@ -11,9 +11,11 @@ private:
     Arbol arbol1;
     Alien alien;
     float pointsA[3], pointsB[3];
+    void loadIdentity();
 
 public:
     void dibujarEscena();
+    void actualizarEscena();
 
     EscenaUno();
 };

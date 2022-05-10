@@ -6,26 +6,27 @@ EscenaUno::EscenaUno(){
     alien = Alien(op);
 }
 
+void EscenaUno::loadIdentity(){
+    op->loadIdentity();
+}
+
 void EscenaUno::dibujarEscena(){
     int i;
+    loadIdentity();
 
     op->push(); // Cargar una matriz identidad
-    op->translation(-24,0,0);
 
-    for (i = 0; i < 6; i++) {
-        arbol1.draw();
-        op->translation(8,0,0);
-    }
+    //op->translation(-8,0,0);
+    arbol1.draw();
+
+    /*op->push();
+    op->translation(16,0,0);
+    arbol1.draw();
+
 
     op->pop();
-
-    op->push();
-
-    op->translation(-24,0,50);
-    for (i = 0; i < 6; i++) {
-        arbol1.draw();
-        op->translation(8,0,0);
-    }
+    op->translation(0,0,8);
+    arbol1.draw();*/
 
     op->pop();//Matriz Identidad
 
@@ -35,4 +36,8 @@ void EscenaUno::dibujarEscena(){
     alien.draw();
 
     op->pop();
+}
+
+void EscenaUno::actualizarEscena() {
+    arbol1.update();
 }

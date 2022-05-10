@@ -19,9 +19,9 @@ float FOVY=60.0;
 float ZNEAR=0.01;
 float ZFAR=300.0;
 //gluLookAt(EYE_X,EYE_Y,EYE_Z,CENTER_X,CENTER_Y,CENTER_Z,UP_X,UP_Y,UP_Z)
-float EYE_X=10.0;
-float EYE_Y=15.0;
-float EYE_Z=15.0;
+float EYE_X=25.0;
+float EYE_Y=25.0;
+float EYE_Z=25.0;
 float CENTER_X=0;
 float CENTER_Y=0;
 float CENTER_Z=0;
@@ -38,6 +38,8 @@ float Z_MAX=20;
 
 void idle(void)
 {
+    escena.actualizarEscena();
+    glutPostRedisplay();
 }
 
 void drawAxis()
@@ -69,47 +71,8 @@ void drawAxis()
      glLineWidth(1.0);
  }
 
-void reshape(int width, int height)
-{
-}
-
-static void keys(unsigned char key, int x, int y)
-{
-    switch(key){
-                //Z
-                case 'w':
-                     EYE_Z++;
-                     break;
-                case 's':
-                     EYE_Z--;
-                     break;
-                //X
-                case 'd':
-                     EYE_X++;
-                     break;
-                case 'a':
-                     EYE_X--;
-                     break;
-
-                //Y
-                case 'r':
-                     EYE_Y++;
-                     break;
-                case 'f':
-                     EYE_Y--;
-                     break;
-
-                default:
-                     break;
-    }
-    glutPostRedisplay();
-}
-//--------------------------------------------------------------------------
-
 void display()
 {
-    glLoadIdentity();
-    gluLookAt(EYE_X,EYE_Y,EYE_Z,CENTER_X,CENTER_Y,CENTER_Z,UP_X,UP_Y,UP_Z);
     glClear(GL_COLOR_BUFFER_BIT);
     drawAxis();
     escena.dibujarEscena();
@@ -119,7 +82,6 @@ void display()
 void init()
 {
     glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
     gluPerspective(FOVY, (GLfloat)WIDTH/HEIGTH, ZNEAR, ZFAR);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
@@ -132,12 +94,11 @@ int main(int argc, char **argv)
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowPosition(50, 50);
     glutInitWindowSize(WIDTH, HEIGTH);
-    glutCreateWindow("Ejemplo idea");
+    glutCreateWindow("Triangulo a color");
     init();
     glutDisplayFunc(display);
-    //glutIdleFunc(idle);
-    glutKeyboardFunc(keys);
-    //glutReshapeFunc(reshape);
+    glutIdleFunc(idle);
     glutMainLoop();
     return 0;
 }
+
