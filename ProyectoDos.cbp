@@ -47,6 +47,8 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="objetos/carro.cpp" />
 		<Unit filename="objetos/carro.h" />
+		<Unit filename="objetos/alien.cpp" />
+		<Unit filename="objetos/alien.h" />
 		<Unit filename="objetos/arbol.cpp" />
 		<Unit filename="objetos/arbol.h" />
 		<Unit filename="objetos/piramide.cpp" />

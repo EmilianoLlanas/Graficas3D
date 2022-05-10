@@ -7,7 +7,7 @@ EscenaUno::EscenaUno(){
 
 
     arbol1 = Arbol(op);
-    piramide = Piramide(op);
+    alien = Alien(op);
 }
 
 void EscenaUno::loadIdentity(){
@@ -38,11 +38,20 @@ void EscenaUno::dibujarEscena(){
     op->pop();//Matriz Identidad
     op->push();
     carro1.draw();
+    op->pop();
 
 
+    op->push();
+
+    op->translation(5,2,5);
+
+    alien.draw();
+
+    op->pop();
 }
 
 void EscenaUno::actualizarEscena() {
     arbol1.update();
     carro1.update();
+    alien.update();
 }

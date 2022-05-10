@@ -50,14 +50,18 @@ void Piramide::draw(){
     glPointSize(width);
 
     int i;
+
     glBegin(GL_LINE_LOOP);
       for(i=0;i<4;i++)
         glVertex3d((*p)[0][i],(*p)[1][i],(*p)[2][i]);
     glEnd();
+
     glBegin(GL_LINES);
       for(i=0;i<4;i++){
         glVertex3d((*p)[0][4],(*p)[1][4],(*p)[2][4]);
         glVertex3d((*p)[0][i],(*p)[1][i],(*p)[2][i]);
       }
     glEnd();
+
+
 }
