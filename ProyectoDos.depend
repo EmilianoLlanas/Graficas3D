@@ -56,31 +56,31 @@
 1652134715 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.cpp
 	"arbol.h"
 
-1652117978 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.cpp
+1652149023 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.cpp
 	"escenaUno.h"
 
-1652060396 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.h
+1652148990 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.h
 	"../utilidades/Op3D.h"
 	"../objetos/arbol.h"
 	"../objetos/alien.h"
 
-1652057229 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\utilidades\op3d.h
+1652148990 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\utilidades\op3d.h
 	<stack>
 	<GL/freeglut.h>
 	<iostream>
 	<cmath>
 
-1652057229 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.h
+1652148990 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652057707 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\main.cpp
+1652149035 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
 	"escena/escenaUno.h"
 
-1652118160 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.cpp
+1652148990 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.cpp
 	"arbol.h"
 
 1652142928 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\piramide.cpp
@@ -97,7 +97,7 @@
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652146976 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\alien.cpp
+1652148886 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\alien.cpp
 	"alien.h"
 
 1652060962 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\/objetos\piramide.h
