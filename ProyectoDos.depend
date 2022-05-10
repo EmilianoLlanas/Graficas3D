@@ -50,10 +50,10 @@
 1651160429 c:\program files\codeblocks\mingw\include\gl\freeglut_ext.h
 	<stdarg.h>
 
-1652139472 c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.h
+1652150968 c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652139472 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.cpp
+1652151744 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.cpp
 	"arbol.h"
 
