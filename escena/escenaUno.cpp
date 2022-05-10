@@ -33,6 +33,7 @@ void EscenaUno::dibujarEscena(){
     op->push();
 
     op->translation(5,2,5);
+
     alien.draw();
 
     op->pop();
@@ -40,4 +41,5 @@ void EscenaUno::dibujarEscena(){
 
 void EscenaUno::actualizarEscena() {
     arbol1.update();
+    alien.update();
 }

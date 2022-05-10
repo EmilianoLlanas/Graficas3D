@@ -2,11 +2,18 @@
 
 Alien::Alien(){
     op = NULL;
+    movimiento = 0;
+    rotacion = 0;
     loadPoints();
 }
 
 Alien::Alien(Op3D* mainOp){
     op = mainOp;
+    movimiento = 0.01;
+    rotacion = 0;
+    right = 1;
+    down = 1;
+    distancia = 5;
     loadPoints();
 }
 
@@ -44,7 +51,60 @@ void Alien::loadPoints(){
 }
 
 void Alien::draw(){
+
+    op->push();
+
+    if((newx<=distancia) && (right == 1)){
+        newx += movimiento;
+
+        if(newx == distancia){
+            right = 0;
+            down = 1;
+        }
+    }else if ((newx >= distancia) && (down == 1)){
+
+
+        if(newz == 0){
+           newz = movimiento;
+        }
+
+        if(newz >= distancia){
+            right = 0;
+            down = 0;
+            newx -= movimiento;
+        }else{
+            newz += movimiento;
+        }
+
+    }else if ((newx < distancia) && (newx > 0) && (right == 0)){
+
+        newx -= movimiento;
+
+        if(newx <= 0){
+            down = 0;
+            newx = 0;
+        }
+
+    }else if ((newz > 0) && (down == 0)){
+        newz -= movimiento;
+
+        if(newz <= 0){
+            down = 1;
+            right = 1;
+            newz = 0;
+        }
+
+    }
+
+    //
+
+    //op->translation(5,0,movimiento);
+
+    op->translation(newx,0,newz);
+
     op->applyModelMatrix(*points, *modelMatrix, MAXPOINTS);
+
+    op->pop();
 
     GLdouble (*p)[4][MAXPOINTS] = &modelMatrix;
     GLfloat colors [3] = {0.42f, 0.66f, 1.77f};
@@ -133,6 +193,10 @@ void Alien::draw(){
         glVertex3d((*p)[0][5],(*p)[1][5],(*p)[2][5]);
       }
     glEnd();
+}
 
+void Alien::update() {
+    //movimiento += 0.01;
+    rotacion += 0.05;
 
 }

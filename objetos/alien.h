@@ -12,10 +12,14 @@ private:
     GLdouble modelMatrix[4][MAXPOINTS];
     Op3D *op;
 
+    float movimiento, rotacion, distancia;
+    float newx, newz, right, down;
+
     void loadPoints();
 
 public:
     void draw();
+    void update();
     Alien();
     Alien(Op3D* mainOp);
 };
