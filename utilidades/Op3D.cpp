@@ -4,7 +4,10 @@ Op3D::Op3D(){
     currentMatrix = new Modelado();
     pi = 3.14159265359;
 
-    // Assign Values
+    loadIdentity();
+}
+
+void Op3D::loadIdentity(){
     for(int i=0;i<4;i++) {
         for(int j=0;j<4;j++) {
             if (i == j)
@@ -59,6 +62,18 @@ void Op3D::rotateZ(float deg){
     mult(rotateMatrix, currentMatrix->matrix);
 }
 
+void Op3D::rotateXD(float deg){
+    GLdouble rotateMatrix[4][4] = {{1,0,0,0}, {0, cos(deg), -sin(deg), 0}, {0, sin(deg), cos(deg), 0}, {0,0,0,1}};
+
+    mult(rotateMatrix, currentMatrix->matrix);
+}
+
+void Op3D::rotateYD(float deg){
+    GLdouble rotateMatrix[4][4] = {{cos(deg), 0, sin(deg), 0}, {0, 1, 0, 0}, {-sin(deg), 0, cos(deg), 0}, {0,0,0,1}};
+
+    mult(rotateMatrix, currentMatrix->matrix);
+}
+
 float Op3D::DegToRad(float g)
 {
       return ((g*pi)/180);
@@ -92,6 +107,9 @@ void Op3D::scaling(GLdouble x, GLdouble y, GLdouble z) {
 }
 
 void Op3D::rotacionLibre(float theta, float p1[3], float p2[3]){
+    push();
+    loadIdentity();
+
     //Sacar vector unitario
     float V = sqrt( pow(p1[0] - p2[0], 2) + pow(p1[1] - p2[1], 2) + pow(p1[2] - p2[2], 2));
 
@@ -101,19 +119,38 @@ void Op3D::rotacionLibre(float theta, float p1[3], float p2[3]){
 
     float d = sqrt(pow(b,2) + pow(c,2));
 
-    translation(-p1[0], -p1[1], -p2[2]);
+    float alpha;
+    if (d == 0)
+        alpha = asin(0); //Formar matris para recibir cocientes o grados
+    else
+        alpha = asin(b/d); //Formar matris para recibir cocientes o grados
 
-    rotateX(b,c,d);
+    float beta = asin(a / sqrt(pow(a,2) + pow(d,2)));
 
-    rotateY(a,d);
+    translation(-p1[0], -p1[1], -p1[2]);
+
+    //rotateX(b,c,d);
+    rotateXD(alpha);
+
+    //rotateY(a,d);
+    rotateYD(beta);
 
     rotateZ(DegToRad(theta));
 
-    rotateY(-a, -d);
+    //rotateY(-a, -d);
+    rotateYD(-beta);
 
-    rotateX(-b, -c, -d);
+    //rotateX(-b, -c, -d);
+    rotateXD(-alpha);
 
-    translation(p1[0], p1[1], p2[2]);
+    translation(p1[0], p1[1], p1[2]);
+
+    Modelado temp;
+    assignValues(temp.matrix, currentMatrix->matrix);
+
+    pop();
+    mult(currentMatrix->matrix, temp.matrix);
+    assignValues(currentMatrix->matrix, temp.matrix);
 }
 
 void Op3D::push() {

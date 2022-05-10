@@ -1,22 +1,24 @@
-#ifndef PIRAMIDE_H_INCLUDED
-#define PIRAMIDE_H_INCLUDED
+#ifndef ARBOL_H_INCLUDED
+#define ARBOL_H_INCLUDED
 
 #include <GL/glut.h>
 #include "../utilidades/Op3D.h"
-#define MAXPOINTS 6
+#define MAXPOINTS 16
 
-class Piramide {
+class Arbol {
 private:
     GLdouble points[4][MAXPOINTS];
     GLdouble modelMatrix[4][MAXPOINTS];
     Op3D *op;
 
+    float movimiento;
     void loadPoints();
 
 public:
     void draw();
-    Piramide();
-    Piramide(Op3D* mainOp);
+    void update();
+    Arbol();
+    Arbol(Op3D* mainOp);
 };
 
-#endif // PIRAMIDE_H_INCLUDED
+#endif // ARBOL_H_INCLUDED

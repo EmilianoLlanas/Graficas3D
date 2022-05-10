@@ -2,17 +2,19 @@
 #define ESCENAUNO_H_INCLUDED
 
 #include "../utilidades/Op3D.h"
-#include "../objetos/piramide.h"
+#include "../objetos/arbol.h"
 #include "../objetos/carro.h"
 class EscenaUno{
 private:
     Op3D *op;
-    Piramide piramideUno, piramideDos, piramideTres;
     Carro carro1;
+    Arbol arbol1;
     float pointsA[3], pointsB[3];
+    void loadIdentity();
 
 public:
     void dibujarEscena();
+    void actualizarEscena();
 
     EscenaUno();
 };
