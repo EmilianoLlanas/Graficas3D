@@ -230,5 +230,5 @@ void Arbol::draw(){
 }
 
 void Arbol::update() {
-    movimiento += 0.0003;
+    movimiento += 0.006;
 }

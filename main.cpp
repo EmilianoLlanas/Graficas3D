@@ -39,6 +39,7 @@ float Z_MAX=20;
 void idle(void)
 {
     escena.actualizarEscena();
+    Sleep(30);
     glutPostRedisplay();
 }
 
