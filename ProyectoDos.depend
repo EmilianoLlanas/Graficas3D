@@ -83,7 +83,7 @@
 1652118160 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.cpp
 	"arbol.h"
 
-1652057229 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\piramide.cpp
+1652142928 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\piramide.cpp
 	"piramide.h"
 
 1652060962 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\piramide.h
@@ -97,7 +97,7 @@
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652117894 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\alien.cpp
+1652146976 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\alien.cpp
 	"alien.h"
 
 1652060962 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\/objetos\piramide.h
