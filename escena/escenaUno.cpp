@@ -21,7 +21,7 @@ void EscenaUno::dibujarEscena(){
     loadIdentity();
     op->push();
 
-    op->translation(-5,5,0);
+    op->translation(-5,5,5);
 
     alien.draw();
 

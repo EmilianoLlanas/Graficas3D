@@ -100,7 +100,7 @@ void Alien::draw(){
 
     op->translation(5,0,movimiento);
 
-    op->translation(newx,0,newz);
+    //op->translation(newx,0,newz);
 
     op->applyModelMatrix(*points, *modelMatrix, MAXPOINTS);
 
@@ -196,7 +196,7 @@ void Alien::draw(){
 }
 
 void Alien::update() {
-    movimiento += 0.01;
+    movimiento += 0.08;
     rotacion += 0.05;
 
 }
