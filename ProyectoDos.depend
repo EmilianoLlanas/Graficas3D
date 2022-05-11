@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1652149882 source:c:\users\luis angel\documents\graficas\proyectodos\main.cpp
+1652230888 source:c:\users\luis angel\documents\graficas\proyectodos\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
 	"escena/escenaUno.h"
 
-1645718850 c:\program files\codeblocks\mingw\include\gl\glut.h
+1651160424 c:\program files\codeblocks\mingw\include\gl\glut.h
 	"freeglut_std.h"
 
-1645718850 c:\program files\codeblocks\mingw\include\gl\freeglut_std.h
+1651160423 c:\program files\codeblocks\mingw\include\gl\freeglut_std.h
 	<windows.h>
 	<EGL/egl.h>
 	<GLES/gl.h>
@@ -19,35 +19,37 @@
 	<GL/glu.h>
 	<stdlib.h>
 
-1652143023 c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.h
+1652237059 c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.h
 	"../utilidades/Op3D.h"
 	"../objetos/arbol.h"
-	"../objetos/piramide.h"
+	"../objetos/carro.h"
+	"../objetos/alien.h"
+	"../objetos/rueda.h"
 
-1652143074 c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.h
+1652230888 c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652144272 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.cpp
+1652230593 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\piramide.cpp
 	"piramide.h"
 
-1652149609 source:c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.cpp
+1652237061 source:c:\users\luis angel\documents\graficas\proyectodos\escena\escenauno.cpp
 	"escenaUno.h"
 
-1652139472 c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.h
+1652238063 c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.h
 	<stack>
 	<GL/freeglut.h>
 	<iostream>
 	<cmath>
 
-1652139472 source:c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.cpp
+1652238273 source:c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.cpp
 	"Op3D.h"
 
-1645718850 c:\program files\codeblocks\mingw\include\gl\freeglut.h
+1651160428 c:\program files\codeblocks\mingw\include\gl\freeglut.h
 	"freeglut_std.h"
 	"freeglut_ext.h"
 
-1645718850 c:\program files\codeblocks\mingw\include\gl\freeglut_ext.h
+1651160429 c:\program files\codeblocks\mingw\include\gl\freeglut_ext.h
 	<stdarg.h>
 
 1652215217 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\piramide.cpp
@@ -178,5 +180,33 @@
 	"carro.h"
 
 1652234698 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\rueda.cpp
+	"rueda.h"
+
+1652230888 c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.h
+	<GL/glut.h>
+	"../utilidades/Op3D.h"
+
+1652230888 c:\users\luis angel\documents\graficas\proyectodos\objetos\carro.h
+	<GL/glut.h>
+	"../utilidades/Op3D.h"
+
+1652230593 c:\users\luis angel\documents\graficas\proyectodos\objetos\alien.h
+	<GL/glut.h>
+	"../utilidades/Op3D.h"
+
+1652230888 c:\users\luis angel\documents\graficas\proyectodos\objetos\rueda.h
+	<GL/glut.h>
+	"../utilidades/Op3D.h"
+
+1652236048 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\alien.cpp
+	"alien.h"
+
+1652230888 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\arbol.cpp
+	"arbol.h"
+
+1652230888 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\carro.cpp
+	"carro.h"
+
+1652230888 source:c:\users\luis angel\documents\graficas\proyectodos\objetos\rueda.cpp
 	"rueda.h"
 

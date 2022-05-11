@@ -15,7 +15,6 @@ private:
     Alien alien;
     Rueda rueda1;
     float pointsA[3], pointsB[3];
-    void loadIdentity();
 
 public:
     void dibujarEscena();

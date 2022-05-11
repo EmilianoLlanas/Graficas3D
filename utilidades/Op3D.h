@@ -6,29 +6,30 @@
 #include <iostream>
 #include <cmath>
 
-struct Modelado{
-  GLdouble matrix[4][4];
+class Matrix{
+public:
+  GLdouble a[4][4];
 };
 
 class Op3D{
 private:
-    std::stack<Modelado *> modelStack;
-    Modelado *currentMatrix;
+    std::stack<Matrix *> modelStack;
+    Matrix *currentMatrix;
+    GLdouble T[4][4];
+    GLdouble E[4][4];
+
     float pi;
 
     void mult(GLdouble (&matrixA)[4][4], GLdouble (&matrixB)[4][4]);
     void assignValues(GLdouble (&matrixA)[4][4], GLdouble (&matrixB)[4][4]);
     float DegToRad(float g);
 
-    void rotateX(float b, float c, float d);
-    void rotateY(float a, float d);
     void rotateZ(float deg);
-
     void rotateXD(float deg);
     void rotateYD(float deg);
 public:
     Op3D();
-    void loadIdentity();
+    void loadIdentity(GLdouble a[4][4]);
 
     void translation(GLdouble x, GLdouble y, GLdouble z);
     void scaling(GLdouble x, GLdouble y, GLdouble z);

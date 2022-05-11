@@ -12,13 +12,9 @@ EscenaUno::EscenaUno(){
     rueda1=Rueda(op);
 }
 
-void EscenaUno::loadIdentity(){
-    op->loadIdentity();
-}
-
 void EscenaUno::dibujarEscena(){
     int i;
-    loadIdentity();
+
     op->push();
 
     op->translation(-5,20,10);
