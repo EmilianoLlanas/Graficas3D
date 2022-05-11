@@ -13,6 +13,8 @@ Alien::Alien(Op3D* mainOp){
     rotacion = 0;
     right = 1;
     down = 1;
+    newx = 0.0f;
+    newz = 0.0f;
     distancia = 7;
     loadPoints();
 }
