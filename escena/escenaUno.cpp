@@ -8,6 +8,8 @@ EscenaUno::EscenaUno(){
 
     arbol1 = Arbol(op);
     alien = Alien(op);
+
+    rueda1=Rueda(op);
 }
 
 void EscenaUno::loadIdentity(){
@@ -17,7 +19,13 @@ void EscenaUno::loadIdentity(){
 void EscenaUno::dibujarEscena(){
     int i;
     loadIdentity();
+    op->push();
 
+    op->translation(-5,5,0);
+
+    alien.draw();
+
+    op->pop();
     op->push(); // Cargar una matriz identidad
     op->translation(-24,0,-16);
 
@@ -36,16 +44,44 @@ void EscenaUno::dibujarEscena(){
     }
 
     op->pop();//Matriz Identidad
+
     op->push();
     carro1.draw();
     op->pop();
 
 
+
+
     op->push();
 
-    op->translation(5,2,5);
+    op->translation(.5,0,-.3f);
+    op->scaling(.3f,.3f,.3f);
 
-    alien.draw();
+    rueda1.draw();
+
+    op->pop();
+
+    op->push();
+
+    op->translation(15,0,-.3f);
+    op->scaling(.3f,.3f,.3f);
+
+    rueda1.draw();
+
+    op->pop();
+
+    op->push();
+    op->translation(.5f,0,10);
+    op->scaling(.3f,.3f,.3f);
+
+    rueda1.draw();
+    op->pop();
+
+    op->push();
+    op->translation(15,0,10);
+    op->scaling(.3f,.3f,.3f);
+
+    rueda1.draw();
 
     op->pop();
 }
@@ -53,5 +89,7 @@ void EscenaUno::dibujarEscena(){
 void EscenaUno::actualizarEscena() {
     arbol1.update();
     carro1.update();
+    rueda1.update();
     alien.update();
+
 }

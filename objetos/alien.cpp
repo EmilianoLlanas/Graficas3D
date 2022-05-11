@@ -9,11 +9,11 @@ Alien::Alien(){
 
 Alien::Alien(Op3D* mainOp){
     op = mainOp;
-    movimiento = 0.01;
+    movimiento = 0.1;
     rotacion = 0;
     right = 1;
     down = 1;
-    distancia = 5;
+    distancia = 10;
     loadPoints();
 }
 
@@ -98,7 +98,7 @@ void Alien::draw(){
 
     //
 
-    //op->translation(5,0,movimiento);
+    op->translation(5,0,movimiento);
 
     op->translation(newx,0,newz);
 
@@ -196,7 +196,7 @@ void Alien::draw(){
 }
 
 void Alien::update() {
-    //movimiento += 0.01;
+    movimiento += 0.01;
     rotacion += 0.05;
 
 }

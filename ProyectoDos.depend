@@ -5,10 +5,10 @@
 	<stdlib.h>
 	"escena/escenaUno.h"
 
-1645718850 c:\program files\codeblocks\mingw\include\gl\glut.h
+1426374928 c:\program files\codeblocks\mingw\include\gl\glut.h
 	"freeglut_std.h"
 
-1645718850 c:\program files\codeblocks\mingw\include\gl\freeglut_std.h
+1426374928 c:\program files\codeblocks\mingw\include\gl\freeglut_std.h
 	<windows.h>
 	<EGL/egl.h>
 	<GLES/gl.h>
@@ -43,14 +43,14 @@
 1652139472 source:c:\users\luis angel\documents\graficas\proyectodos\utilidades\op3d.cpp
 	"Op3D.h"
 
-1645718850 c:\program files\codeblocks\mingw\include\gl\freeglut.h
+1426374928 c:\program files\codeblocks\mingw\include\gl\freeglut.h
 	"freeglut_std.h"
 	"freeglut_ext.h"
 
-1645718850 c:\program files\codeblocks\mingw\include\gl\freeglut_ext.h
+1426374928 c:\program files\codeblocks\mingw\include\gl\freeglut_ext.h
 	<stdarg.h>
 
-1652148418 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\piramide.cpp
+1652215217 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\piramide.cpp
 	"piramide.h"
 
 1652152728 c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\piramide.h
@@ -63,16 +63,17 @@
 	<iostream>
 	<cmath>
 
-1652197698 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\escena\escenauno.cpp
+1652230403 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\escena\escenauno.cpp
 	"escenaUno.h"
 
-1652152745 c:\users\emiliano (trabajo)\documents\github\graficas3d\escena\escenauno.h
+1652224292 c:\users\emiliano (trabajo)\documents\github\graficas3d\escena\escenauno.h
 	"../utilidades/Op3D.h"
 	"../objetos/arbol.h"
 	"../objetos/carro.h"
-	"../objetos/piramide.h"
+	"../objetos/alien.h"
+	"../objetos/rueda.h"
 
-1652152728 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\main.cpp
+1652230375 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
@@ -85,14 +86,14 @@
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652200495 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\carro.cpp
+1652227287 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\carro.cpp
 	"carro.h"
 
 1652152728 c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\arbol.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652152728 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\arbol.cpp
+1652217525 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\arbol.cpp
 	"arbol.h"
 
 1652207129 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.cpp
@@ -148,4 +149,18 @@
 	<GL/freeglut.h>
 	<iostream>
 	<cmath>
+
+1652215217 c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\alien.h
+	<GL/glut.h>
+	"../utilidades/Op3D.h"
+
+1652230456 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\alien.cpp
+	"alien.h"
+
+1652228698 c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\rueda.h
+	<GL/glut.h>
+	"../utilidades/Op3D.h"
+
+1652230174 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\rueda.cpp
+	"rueda.h"
 
