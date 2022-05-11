@@ -96,50 +96,50 @@
 1652231173 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\arbol.cpp
 	"arbol.h"
 
-1652234437 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.cpp
+1652234698 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.cpp
 	"escenaUno.h"
 
-1652234050 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.h
+1652234698 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\escena\escenauno.h
 	"../utilidades/Op3D.h"
 	"../objetos/arbol.h"
 	"../objetos/carro.h"
 	"../objetos/alien.h"
 	"../objetos/rueda.h"
 
-1652148990 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\utilidades\op3d.h
+1652234698 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\utilidades\op3d.h
 	<stack>
 	<GL/freeglut.h>
 	<iostream>
 	<cmath>
 
-1652233734 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.h
+1652234698 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652233734 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\main.cpp
+1652234698 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\main.cpp
 	<GLUT/glut.h>
 	<GL/glut.h>
 	<stdlib.h>
 	"escena/escenaUno.h"
 
-1652234050 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.cpp
+1652234698 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\arbol.cpp
 	"arbol.h"
 
-1652234050 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\piramide.cpp
+1652234698 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\piramide.cpp
 	"piramide.h"
 
 1652233734 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\piramide.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652057229 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\utilidades\op3d.cpp
+1652234698 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\utilidades\op3d.cpp
 	"Op3D.h"
 
-1652234050 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\alien.h
+1652234698 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\alien.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652234459 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\alien.cpp
+1652234698 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\alien.cpp
 	"alien.h"
 
 1652060962 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\/objetos\piramide.h
@@ -166,15 +166,15 @@
 1652231173 source:c:\users\emiliano (trabajo)\documents\github\graficas3d\objetos\rueda.cpp
 	"rueda.h"
 
-1652233734 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\carro.h
+1652234698 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\carro.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652234050 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\rueda.h
+1652234698 c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\rueda.h
 	<GL/glut.h>
 	"../utilidades/Op3D.h"
 
-1652233734 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\carro.cpp
+1652234698 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\carro.cpp
 	"carro.h"
 
 1652234050 source:c:\users\saman\documents\last one\graficas\proyecto_2\graficas3d\objetos\rueda.cpp
